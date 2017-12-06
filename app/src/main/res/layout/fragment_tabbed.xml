@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:weightSum="3"
+    tools:context="com.thereza.systemtracker.MainActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="2.9">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:gravity="bottom|center|left|right"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Intruder Alert is able to detect unautorized access of Phone and notify owner of the device by email. If Phone has no internet connection, this application will save the detection data and when get internet connection send email notificaton. This application automatically start on background when device boot complete." />
+
+                <View android:background="#e5e5e5"
+                    android:layout_width = "match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/textVi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:text="Setting Procedure" />
+                <TextView
+                    android:id="@+id/xtV7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:gravity="bottom|center|left|right"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="* Make sure all permission are given of this apps."/>
+
+
+                <TextView
+                    android:id="@+id/textV7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:gravity="bottom|center|left|right"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="* Set your email address to which you want to get notification."/>
+
+                <TextView
+                    android:id="@+id/texV7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:gravity="bottom|center|left|right"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="* Some device has no permission to set apps auto start in background. So, make sure that application autostart checked."/>
+
+
+
+                <View android:background="#e5e5e5"
+                    android:layout_width = "match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:text="Application Features" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:text="- SIM Card Change Tracking" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:text="- Application Install / Uninstall Tracking" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:text="- File Detetion and Addition Tracking" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:text="- Device Unlock Tracking" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.9"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="Email Setting" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Set Your Email Address" />
+
+        <LinearLayout
+            android:id="@+id/unLocktId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View android:background="#e5e5e5"
+                android:layout_width = "match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/textxV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text="No of Unlock Attempt" />
+
+            <Spinner
+                android:id="@+id/spinnerAttempt"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:spinnerMode="dialog"
+                android:prompt="@string/prompt"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/autoStartId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View android:background="#e5e5e5"
+                android:layout_width = "match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/textV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text="Background Service Setting" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/autostarttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Set Application Autostart Mode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deviceAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View android:background="#e5e5e5"
+                android:layout_width = "match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="1dp"/>
+
+            <Switch
+                android:id="@+id/deviceAdminSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Device Admin Setting"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+</LinearLayout>

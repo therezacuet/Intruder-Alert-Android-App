@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Intruder Alert</string>
+
+    <string name="device_admin_explanation">For experimentation purposes only</string>
+    <string name="compliant">Your password is compliant!</string>
+    <string name="not_compliant">Your password is not compliant! Submit to my authority!</string>
+    <string name="password_failed">You will never break into this device!</string>
+    <string name="password_success">Congratulations!</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="help_text"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-6529129236081477/5144398204</string>
+    <string name="interstitial_full_screen">ca-app-pub-6529129236081477/9096742194</string>
+
+    <string name="prompt">Please Select</string>
+
+</resources>

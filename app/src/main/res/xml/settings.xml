@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Email Setting" >
+
+        <EditTextPreference
+            android:dialogMessage="Set Your Email to get Notification"
+            android:dialogTitle="Enter Email"
+            android:inputType="textEmailAddress"
+            android:key="email"
+            android:title="Set Your Email Address" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
